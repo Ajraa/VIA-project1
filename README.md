@@ -1,1 +1,1 @@
-# VIA-project1
+# První projekt do Vývoje Internetových Aplikací
