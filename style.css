@@ -2,8 +2,135 @@ body {
     display: flex;
     flex: 1 1 auto;
     flex-direction: column;
+    align-items: center;
+    font-family: 'San Francisco';
+    margin: 0;
 }
 
 .header {
+    height: 30px;
+    width: 100%;
+    background-color: rgb(29,29,31);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:antiquewhite;
+}
+
+.header-items {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.header-items a:hover {
+    color: white;
+}
+
+.header img {
+    width: 16px;
+    height: 16px;
+}
+
+#bag:hover {
+    src: url("./images/bag-hover.png");
+}
+
+#iphonePro {
+    background-image: url("./images/iphone15pro.jpg");
+    color: white;
+}
+
+#iphone {
+    background-image: url("./images/iphone15.jpg");
+    color: black;
+}
+
+#film {
+    background-image: url("./images/film.jpg");
+    color: white;
+}
+
+#film h2 {
+    position: relative;
+    top: 80px;
+}
+
+.ads {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.ads-links, .card-links {
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.ads-links a, .card-links a {
+    text-decoration: none;
+    color: #06c;
+}
+#film .ads-links a {
+    color: white;
+}
+
+#film .ads-links {
+    display: block;
+    position: relative;
+    bottom: 100px;
+}
+
+.ads-links a:hover {
+    text-decoration: underline;
+}
+
+#iwatch-card {
+    background-image: url("./images/iwatch.jpg");
+    color: white;
+}
+
+#ipad {
+    background-image: url("./images/ipad.jpg");
+    color: black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    color: blue;
+}
+
+.card {
+    width: 800px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.card-links h5 {
+    margin-top: 0px;
+}
+
+.card-text {
+    margin: 0 auto 0 auto;
+    text-align: center;
 }
