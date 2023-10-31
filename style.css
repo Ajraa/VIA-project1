@@ -15,6 +15,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
 }
 
 .header-items {
@@ -48,6 +51,7 @@ body {
     color: white;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 30px;
 }
 
 #iphone {
@@ -132,6 +136,7 @@ body {
     gap: 12px;
     flex-wrap: wrap;
     color: blue;
+    margin-bottom: 8px;
 }
 
 .card {
@@ -230,3 +235,51 @@ ul {
     display: flex;
     justify-content: space-between;
 }
+
+.slider {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slider img:hover {
+    transform:scale(1.5);
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
