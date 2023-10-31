@@ -3,7 +3,7 @@ body {
     flex: 1 1 auto;
     flex-direction: column;
     align-items: center;
-    font-family: 'San Francisco';
+    font-family: sans-serif;
     margin: 0;
 }
 
