@@ -1,0 +1,166 @@
+
+
+#bag:hover {
+    src: url("../images/bag-hover.png");
+}
+
+#iphonePro {
+    background-image: url("../images/iphone15pro.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 30px;
+}
+
+#iphone {
+    background-image: url("../images/iphone15.jpg");
+    color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#film {
+    background-image: url("../images/film.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#film h2 {
+    position: relative;
+    top: 80px;
+}
+
+.ads {
+    max-width: 1920px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.ads-links, .card-links {
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.ads-links a, .card-links a {
+    text-decoration: none;
+    color: #06c;
+}
+#film .ads-links a {
+    color: white;
+}
+
+#film .ads-links {
+    display: block;
+    position: relative;
+    bottom: 100px;
+}
+
+.ads-links a:hover {
+    text-decoration: underline;
+}
+
+#iwatch-card {
+    background-image: url("../images/iwatch.jpg");
+    color: white;
+}
+
+#ipad {
+    background-image: url("../images/ipad.jpg");
+    color: black;
+}
+
+#tradein {
+    background-image: url("../images/tradein.jpg");
+    color: black;
+}
+
+#applecard {
+    background-image: url("../images/applecard.jpg");
+    color: black;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    color: blue;
+    margin-bottom: 8px;
+}
+
+.card {
+    width: 800px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.card-links h5 {
+    margin-top: 0px;
+}
+
+.card-text {
+    margin: 0 auto 0 auto;
+    text-align: center;
+}
+
+
+
+.slider {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slider img:hover {
+    transform:scale(1.5);
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: gray;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
