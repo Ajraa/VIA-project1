@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <script src="../js/checkout.js"></script>
     <title>Apple</title>
     <link rel="icon" type="image/x-icon" href="../images/icon.png">
 </head>
@@ -364,6 +366,49 @@
 
 
   <div class="main"> 
+
+    <div class="checkout-header">
+        <h2>Checkout</h2>
+        <h3 id="price">Show Order Summary: </h3>
+    </div>
+
+    <form class="form-area">
+
+        <div class="form-header">Where should we send your order?</div>
+        <h2>Enter your name and address:</h2>
+        
+        <input class="valid" type="text" id="fname" name="fname" placeholder="First Name" required>
+        <input class="valid" type="text" id="lname" name="lname" placeholder="Last Name" required>
+        <input class="valid" type="text" id="street-adress" name="street-adress" placeholder="Street Adress" required>
+
+        <div class="city-input">
+            <input class="valid" type="number" name="zip-code" id="zip-code" placeholder="Zip Code" required>
+            <select name="state" id="state">
+                <option value="" disabled selected>State/Region</option>
+            </select>
+        </div>
+
+        <select name="country" id="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="mexico">Mexico</option>
+        </select>
+
+        <h2>What’s your contact information?</h2>
+        <div class="form-text">
+            <input class="valid" type="email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <div>We’ll email you a receipt and send order updates to your mobile phone via SMS or iMessage.</div>
+        </div>
+
+        <div class="form-text border">
+            <input class="valid" type="tel" id="phone-number" name="phone-number" placeholder="Phone Number" pattern="[0-9]{9}" required>
+            <div>The phone number you enter can’t be changed after you place your order, so please make sure it’s correct.</div>
+        </div>
+
+        <input class="submit" type="submit" onclick="validateForm()" value="Continue to payment">
+    </form>
+
+    
 
   </div>
 

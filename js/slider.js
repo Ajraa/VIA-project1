@@ -1,19 +1,31 @@
 let slideIndex = 0;
+let timer;
 
 window.addEventListener("load", function(e) {
+    timer = setInterval(function() {
+      plusSlides(1);
+    }, 10000);
     showSlides(slideIndex);
     const next = this.document.getElementById("next");
     console.log(next);
     next.addEventListener("click", function() {
+        clearInterval(timer);
+        timer = setInterval(function() {
+          plusSlides(1);
+        }, 10000);
         plusSlides(1);
     });
     const prev = this.document.getElementById("prev");
     prev.addEventListener("click", function() {
+        clearInterval(timer);
+        timer = setInterval(function() {
+          plusSlides(1);
+        }, 10000);
         plusSlides(-1);
     });
+
+    
 });
-
-
 
 
 // Next/previous controls
@@ -40,4 +52,8 @@ function showSlides(n) {
     slides[slideIndex-1].firstElementChild.currentTime = 0;
     slides[slideIndex-1].firstElementChild.play();
   }
+}
+
+function setPrice(price) {
+  localStorage.setItem("price", price);
 }
