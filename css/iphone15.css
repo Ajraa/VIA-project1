@@ -1,0 +1,136 @@
+.body {
+    background-color: white;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h2 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 200px;
+}
+
+.buy-button {
+    background-color: rgb(0,113,227);
+    border: 0px;
+    border-radius: 980px;
+    color: #F9FAF8;
+    text-align: center;
+    font-size: 17px;
+    width: fit-content;
+    padding: 12px 22px;
+    line-height: 1.1764805882;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slide video {
+    width: 700px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.slider-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 200px;
+}
+
+.slider-links {
+    margin-left: auto;
+}
+
+.slide-text-area {
+    color: black;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: left;
+    top: 10px;
+}
+
+.slider-header h1 {
+    color: black;
+}
+
+.slider-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.slider-links a {
+    text-decoration: none;
+    color: #06c;
+    margin: 5px;
+}
+
+.closer-look h1 {
+    color: black;
+    font-size: 48px;
+    margin-right: auto;
+}
+
+.closer-look {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin-bottom: 200px;
+}
+
+.iphone-img {
+    display: none;
+}
+
+.dots {
+    margin-top: 50px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.yellow {
+    background-color: gold;
+}
+
+.green {
+    background-color: lightgreen;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.black {
+    background-color: black;
+}
+
+.rainbow {
+    background: conic-gradient(pink 20%, gold 0 40%, lightgreen 0 60%, lightblue 0 80%, black 0 100%);
+}

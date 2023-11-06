@@ -34,4 +34,10 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
+  if (slides[slideIndex-1].firstElementChild instanceof HTMLImageElement)
+    slides[slideIndex-1].firstElementChild.src =  slides[slideIndex-1].firstElementChild.src + "?a=" + Math.random();
+  else {
+    slides[slideIndex-1].firstElementChild.currentTime = 0;
+    slides[slideIndex-1].firstElementChild.play();
+  }
 }

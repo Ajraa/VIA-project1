@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/slider.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/iphone15.css">
     <script src="../js/slider.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/iphone.js"></script>
+
     <title>Apple</title>
     <link rel="icon" type="image/x-icon" href="../images/icon.png">
 </head>
@@ -364,109 +365,93 @@
             <a href="./index.html" ><img id="bag" src="../images/bag-calm.png" alt="Bag"></a>
         </div>
     </div>
+  </div>
 
-    <div id="iphonePro" class="ads">
-        <div class="ads-content">
-            <div class="ads-text">
-                <h1>iPhone 15 Pro</h1>
-                <h2>Titanium. So strong. So light. So Pro.</h2>
-            </div>
-            <div class="ads-links">
-                <h3><a href="./iphone15pro.html">Learn more ></a></h3>
-                <h3><a href="./index.html">Buy ></a></h3>
-            </div>
-        </div>
+
+  <div class="hero">
+    <img src="../images/iphone15hero.jpg" alt="iPhone 15">
+    <a  class="buy-button" href="./iphone15.html">Buy</a>
+    <h2>From $799 or $33.29/mo. for 24 mo.</h2>
     </div>
 
-    <div id="iphone" class="ads">
-        <div class="ads-content">
-            <div class="ads-text">
-                <h1>iPhone 15</h1>
-                <h2>New camera. New design. So light. Newphoria.</h2>
-            </div>
-            <div class="ads-links">
-                <h3><a href="./iphone15.html">Learn more ></a></h3>
-                <h3><a href="./index.html">Buy ></a></h3>
+
+    <div class="slider-area">
+        <div class="slider-header">
+            <h1>Get the highlights.</h1>
+            <div class="slider-links">
+                <a href="./iphone15pro.html">Watch the film ></a>
+                <a href="./iphone15pro.html">Watch the event ></a>
             </div>
         </div>
+
+        <div class="slider">
+
+            <div class="slide fade">
+               <video autoplay muted>
+                    <source src="../videos/slider1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+               </video>
+                <div class="slide-text-area">
+                    <div>Durable color-infused glass</div>
+                    <div>and aluminum design.</div>
+                </div>
+            </div>
+    
+            <div class="slide fade">
+                <video autoplay muted>
+                    <source src="../videos/slider3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+               </video>
+                <div class="slide-text-area">
+                    <div>Comes in different colors.</div>
+                </div>
+            </div>
+    
+            <a class="prev" id="prev">&#10094;</a>
+            <a class="next" id="next">&#10095;</a>
+        </div>
+
     </div>
 
-    <div id="film" class="ads">
-        <div class="ads-content">
-            <div class="ads-text">
-                <h2>An Apple Original Film</h2>
-                <img src="../images/film-text.png" alt="Movie title">
-            </div>
-            <div class="ads-links">
-                <h3>In theaters now</h3>
-                <h3><a href="./index.html">Watch the trailer</a></h3>
-            </div>
+    <div class="closer-look">
+
+        <h1>Take a closer look</h1>
+
+        <div class="iphone-img">
+            <img src="../images/alliphones.jpg" alt="all">
         </div>
+
+        <div class="iphone-img">
+            <img src="../images/pinkiphone.jpg" alt="pink">
+        </div>
+
+        <div class="iphone-img">
+            <img src="../images/yellowiphone.jpg" alt="yellow">
+        </div>
+
+        <div class="iphone-img">
+            <img src="../images/greeniphone.jpg" alt="green">
+        </div>
+
+        <div class="iphone-img">
+            <img src="../images/blueiphone.jpg" alt="blue">
+        </div>
+
+        <div class="iphone-img">
+            <img src="../images/blackiphone.jpg" alt="black">
+        </div>
+
+        <div class="dots">
+            <span class="dot rainbow" onclick="currentSlide(0)"></span>
+            <span class="dot pink" onclick="currentSlide(1)"></span>
+            <span class="dot yellow" onclick="currentSlide(2)"></span>
+            <span class="dot green" onclick="currentSlide(3)"></span>
+            <span class="dot blue" onclick="currentSlide(4)"></span>
+            <span class="dot black" onclick="currentSlide(5)"></span>
+          </div>
+
     </div>
-
-    <div class="cards">  
-
-        <div id="iwatch-card" class="card">
-            <div class="card-text">
-                <img src="../images/iwatchText.png" alt="Iwatch text">
-                <h4>Smarter. Brighter. Mightier.</h4>
-            </div>
-            <div class="card-links">
-                <h5><a href="./index.html">Learn more ></a></h5>
-                <h5><a href="./index.html">Buy ></a></h5>
-            </div>
-        </div>
-      
-        <div id="ipad" class="card">
-            <div class="card-text">
-                <h3>iPad</h3>
-                <h4>Lovable. Drawable. Magical.</h4>
-            </div>
-            <div class="card-links">
-                <h5><a href="./index.html">Learn more ></a></h5>
-                <h5><a href="./index.html">Buy ></a></h5>
-            </div>
-        </div>
-
-        <div id="tradein" class="card">
-            <div class="card-text">
-                <img src="./images/tradein-logo.png" alt="Tradein text">
-                <h4>Get $200-$650 in credit when</h4>
-                <h4>you trade in iPhone 11 or higher.</h4>
-            </div>
-            <div class="card-links">
-                <h5><a href="./index.html">See what your device is worth ></a></h5>
-            </div>
-        </div>
-
-        <div id="applecard" class="card">
-            <div class="card-text">
-                <img src="../images/applecard-logo.png" alt="Tradein text">
-                <h4>Get up to 3% Daily Cash back</h4>
-                <h4>with every purchase.</h4>
-            </div>
-            <div class="card-links">
-                <h5><a href="./index.html">Learn more ></a></h5>
-                <h5><a href="./index.html">Apply now ></a></h5>
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="slider">
-
-        <div class="slide fade">
-            <img src="../images/tradein.jpg" alt="">
-        </div>
-
-        <div class="slide fade">
-            <img src="../images/ipad.jpg" alt="iPad">
-        </div>
-
-        <a class="prev" id="prev">&#10094;</a>
-        <a class="next" id="next">&#10095;</a>
-    </div>
-
+    
 
     <div class="footer">
         <div class="footer-content">
