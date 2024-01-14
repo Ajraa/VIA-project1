@@ -32,7 +32,7 @@
 }
 
 .ads-content {
-    display: block;
+    display: block !important;
 }
 
 .ads {
