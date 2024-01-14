@@ -30,13 +30,14 @@
     position: relative;
     top: 80px;
 }
-.ads-content {
+
+.hero-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.ads {
+.hero {
     max-width: 1920px;
     height: 500px;
     width: 100%;
@@ -48,28 +49,28 @@
     margin-bottom: 8px;
 }
 
-.ads-links, .card-links {
+.hero-links, .card-links {
     margin: 0 auto 0 auto;
     display: flex;
     justify-content: space-between;
     width: 220px;
 }
 
-.ads-links a, .card-links a {
+.hero-links a, .card-links a {
     text-decoration: none;
     color: #06c;
 }
-#film .ads-links a {
+#film .hero-links a {
     color: white;
 }
 
-#film .ads-links {
+#film .hero-links {
     display: block;
     position: relative;
     bottom: 100px;
 }
 
-.ads-links a:hover {
+.hero-links a:hover {
     text-decoration: underline;
 }
 
