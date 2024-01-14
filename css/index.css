@@ -31,6 +31,10 @@
     top: 80px;
 }
 
+.ads-content {
+    display: block;
+}
+
 .ads {
     max-width: 1920px;
     height: 500px;
